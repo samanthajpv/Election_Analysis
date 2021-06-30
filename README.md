@@ -20,7 +20,7 @@ Aside from the guideline above, the election commission requested additional inf
 - Software: Python 3.7.6, Visual Studio Code 1.56.2
 
 ## Election Audit Results
-The *election_results.csv* file was read using Python. By making use of Python lists, dictionaries, decision and repetition statements, and printing/writing of output to a text file, the results are as follows:
+The [election analysis output](https://github.com/samanthajpv/Election_Analysis/blob/c411eadbcef4f5313ea9c2c962408b1e426e6c3e/Analysis/election_analysis.txt) was created by making use of Python lists, dictionaries, decision and repetition statements, and printing/writing of the results to a text file. The election audit results are as follows:
 
 - A total of 369,711 votes were cast in this congressional election. 
 ```
@@ -121,8 +121,8 @@ counts = {}
         counts[county_name]=counts.get(county_name,0)+1
 print(counts.items())
 
-# The result would be:
-dict_items([('Jefferson', 38855), ('Denver', 306055), ('Arapahoe', 24801)])
+# The printed result would be:
+# dict_items([('Jefferson', 38855), ('Denver', 306055), ('Arapahoe', 24801)])
 ```
 The get method simplifies the counting loop by using the dictionary and stores keys that are not yet in it. Another modification that can be done to improve the code is to sort the results in descending order. This will make the results easier to read and make it more presentable.
 
